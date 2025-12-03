@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/DigitalMarketingApp/static/css/main.f855e6bc.css",
+    "main.js": "/DigitalMarketingApp/static/js/main.f20c42a2.js",
+    "static/js/453.c63a64dc.chunk.js": "/DigitalMarketingApp/static/js/453.c63a64dc.chunk.js",
+    "static/media/logo.svg": "/DigitalMarketingApp/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/DigitalMarketingApp/index.html",
+    "main.f855e6bc.css.map": "/DigitalMarketingApp/static/css/main.f855e6bc.css.map",
+    "main.f20c42a2.js.map": "/DigitalMarketingApp/static/js/main.f20c42a2.js.map",
+    "453.c63a64dc.chunk.js.map": "/DigitalMarketingApp/static/js/453.c63a64dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.f20c42a2.js"
+  ]
+}
