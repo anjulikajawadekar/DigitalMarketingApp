@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       {/* <div className="container"> */}
         <Routes>
-          <Route path="/" element={<Gallery />} />
+          <Route path="/DigitalMarketingApp" element={<Gallery />} />
           <Route path="/apply" element={<JobForm />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/dashboard" element={<Dashboard />} />
