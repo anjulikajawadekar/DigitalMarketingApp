@@ -1,0 +1,51 @@
+{
+  "sections": [
+    {
+      "id": "social_media",
+      "title": "Social Media Creatives",
+      "description": "Creative designs made for Instagram, Facebook, LinkedIn, and promotional ads.",
+      "images": [
+        { "url": "/images/img3.jpg", "title": "Instagram Creative" },
+        { "url": "/images/img4.jpg", "title": "Facebook Post" }
+      ]
+    },
+    {
+      "id": "branding",
+      "title": "Branding & Logo Designs",
+      "description": "Collection of logo concepts and brand identity designs.",
+      "images": [
+        { "url": "/images/img5.jpg", "title": "Logo Concept" }
+      ]
+    },
+    {
+      "id": "clients",
+      "title": "Client Work Portfolio",
+      "description": "Work done for clients across multiple industries.",
+      "images": []
+    },
+    {
+      "id": "seo",
+      "title": "SEO & Google Ads Performance",
+      "description": "Snapshots showing ranking improvement and campaign results.",
+      "images": []
+    },
+    {
+      "id": "team",
+      "title": "Team & Office Photos",
+      "description": "Behind-the-scenes look at the team and work environment.",
+      "images": []
+    },
+    {
+      "id": "campaign",
+      "title": "Campaign Analytics",
+      "description": "Performance of social media & ad campaigns.",
+      "images": []
+    },
+    {
+      "id": "videos",
+      "title": "Video Ads & Thumbnails",
+      "description": "Videos, reels, and creative ad thumbnails.",
+      "images": []
+    }
+  ]
+}

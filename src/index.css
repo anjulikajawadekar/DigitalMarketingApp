@@ -1,13 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navbar{
+  background-color: #1c5e87;
+}
+
+.gallery-section-1 {
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  background-color: rgb(28, 94, 135);
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.section-1-content {
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.gallery-section-2 {
+  width: 100%;
+  padding: 40px 20px;
+  background: #eaf1f7;
+  text-align: center;
+}
+
+.gallery-section-2 h2, .title-font {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #1c5e87;
+  font-weight: bold;
+}
+
+.title-font {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1c5e87;
+  font-weight: bold;
+}
+
+/* Creative Cards Grid */
+.creatives-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+
+/* Individual Card */
+.creative-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+
+
+.creative-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.creative-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.creative-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.branding-section {
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+}
+
+.branding-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1c5e87;
+}
+
+.branding-text {
+  font-size: 16px;
+  max-width: 700px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.branding-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand-card {
+  width: 350px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+
+  transition: 0.3s;
+}
+
+.brand-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.brand-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.brand-card p {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.clients-section {
+  width: 100%;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px 10px;
+    background: #eaf1f7;
+  /* background: linear-gradient(135deg, #ffffff, #f3f8fc); */
+  border-radius: 12px;
+  text-align: center;
+}
+
+.clients-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1c5e87;
+  margin-bottom: 10px;
+}
+
+.clients-subtitle {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.clients-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 25px;
+  padding: 5px; */
+}
+
+/* Card Styling */
+.client-card {
+  width: 480px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+  transition: 0.35s ease;
+  overflow: hidden; /* important to hide extra-info slide */
+  cursor: pointer;
+}
+
+/* Hover Highlight + Enlarge */
+.client-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.client-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.client-card h4 {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #1c5e87;
+}
+
+/* Extra info hidden */
+.extra-info {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background: #eef7ff;
+  margin-top: 10px;
+  padding: 0px 10px;
+  border-left: 4px solid #1c5e87;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+}
+
+/* Show extra info on hover */
+.client-card:hover .extra-info {
+  max-height: 200px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.client-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Center content on hover */
+.client-card:hover h4,
+.client-card:hover p {
+  text-align: center;
+}
+
+
+/*team-section css*/
+.team-container {
+  padding: 50px 20px;
+  width: 100%;
+}
+
+/* Titles */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #1c5e87;
+  font-weight: bold;
+}
+
+.section-subtext {
+  text-align: center;
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 40px;
+}
+
+/* Team Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* Team Card */
+.team-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.team-photo {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #1c5e87;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-designation {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1c5e87;
+  margin-bottom: 10px;
+}
+
+.team-info {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Work Culture Text */
+.culture-section {
+  margin-top: 60px;
+  text-align: center;
+  
+}
+
+.culture-text {
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Office Photos Grid */
+.office-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.office-photo {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Acivments css */
+
+.achieve-wrapper {
+  padding: 60px 30px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #f3f7fa, #ffffff);
+}
+
+.achieve-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c5e87;
+  margin-bottom: 10px;
+}
+
+.achieve-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.achieve-counters {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.counter-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 14px;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
+  width: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter-box h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1c5e87;
+}
+
+.counter-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+.counter-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 5px 18px rgba(0,0,0,0.15);
+}
+
+/* Achievements Cards */
+
+.achieve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.achieve-card {
+  /* background: white; */
+    background: #eaf1f7;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0px 3px 12px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.achieve-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+.achieve-icon {
+  font-size: 45px;
+  color: #1c5e87;
+  margin-bottom: 15px;
+}
+
+.achieve-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.achieve-card p {
+  font-size: 14px;
+  color: #666;
+}
+
