@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Gallery from './components/Gallery';
 import ContactForm from './components/ContactForm';
@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       {/* <div className="container"> */}
         <Routes>
-          <Route path="/DigitalMarketingApp" element={<Gallery />} />
+          <Route path="/" element={<Gallery />} />
           <Route path="/apply" element={<JobForm />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/dashboard" element={<Dashboard />} />
