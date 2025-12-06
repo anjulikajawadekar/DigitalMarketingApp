@@ -25,7 +25,7 @@ export default function ContactForm() {
       <div className="row">
         <div className="col-6" style={{ background: "white" }}>
           <img
-            src="./DigitalMarketingApp/images/contact-img2.png"
+            src="/DigitalMarketingApp/images/contact-img2.png"
             className="img-fluid"
             alt="ApplicationImg"
           />

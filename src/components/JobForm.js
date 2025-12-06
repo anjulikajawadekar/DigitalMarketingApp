@@ -46,7 +46,7 @@ export default function JobForm() {
     <div className="container-fluid ">
         <div className="row">
         <div className="col-6" style={{background:"white"}}>
-          <img src="./DigitalMarketingApp/images/job-application2.jpg" className="img-fluid" alt="ApplicationImg"/>
+          <img src="/DigitalMarketingApp/images/job-application2.jpg" className="img-fluid" alt="ApplicationImg"/>
           <p style={{textAlign:"center"}}>Join us and grow with a team that values talent and ambition.</p>
         
         </div>
