@@ -13,15 +13,15 @@ export default function Dashboard() {
   const dispatch = useDispatch();
 
   return (
-    <>
+    <div className='container-fluid p-4' >
       <h2>Admin Dashboard</h2>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={4}>
+        {/* <Grid item xs={12} md={4}>
           <Paper sx={{p:2}}>
             <Typography variant="h6">Gallery</Typography>
             <Typography variant="h4">{gallery.length}</Typography>
           </Paper>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} md={4}>
           <Paper sx={{p:2}}>
             <Typography variant="h6">Job Applications</Typography>
@@ -57,6 +57,15 @@ export default function Dashboard() {
       <DashboardList
         title="Contacts"
         items={contacts}
+         extraRender={(c) => (
+          <div>
+            <Typography variant="body1">{c.name}</Typography>
+            <Typography variant="body2">{c.email}</Typography>
+            <Typography variant="body2">Subject : {c.subject}</Typography>
+            <Typography variant="body2">Message : {c.message}</Typography>
+
+          </div>
+        )}
         onDelete={(id) => dispatch(deleteContact(id))}
       />
       <Button color="error" onClick={() => dispatch(clearContacts())} sx={{mt:1}}>Clear All Contacts</Button>
@@ -73,6 +82,6 @@ export default function Dashboard() {
           </div>
         )}
       /> */}
-    </>
+    </div>
   );
 }
