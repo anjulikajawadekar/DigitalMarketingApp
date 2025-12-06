@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/DigitalMarketingApp/static/css/main.06f5488e.css",
-    "main.js": "/DigitalMarketingApp/static/js/main.b30a09c2.js",
+    "main.js": "/DigitalMarketingApp/static/js/main.afa51e33.js",
     "static/js/453.c63a64dc.chunk.js": "/DigitalMarketingApp/static/js/453.c63a64dc.chunk.js",
     "index.html": "/DigitalMarketingApp/index.html",
     "main.06f5488e.css.map": "/DigitalMarketingApp/static/css/main.06f5488e.css.map",
-    "main.b30a09c2.js.map": "/DigitalMarketingApp/static/js/main.b30a09c2.js.map",
+    "main.afa51e33.js.map": "/DigitalMarketingApp/static/js/main.afa51e33.js.map",
     "453.c63a64dc.chunk.js.map": "/DigitalMarketingApp/static/js/453.c63a64dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.06f5488e.css",
-    "static/js/main.b30a09c2.js"
+    "static/js/main.afa51e33.js"
   ]
 }
