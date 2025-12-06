@@ -13,6 +13,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.active-btn {
+  font-weight: bold !important;
+  border-bottom: 2px solid rgb(202, 238, 243) !important;
+  color: rgb(111, 142, 137) !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

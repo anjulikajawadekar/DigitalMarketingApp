@@ -169,29 +169,6 @@ export default function Gallery() {
          {/* End------------Team & Office Section */}
          <AchievementsSection/>
 
-      <div className="gallery-section-2"></div>
-
-      {/* <div style={{ padding: 20 }}>
-        <h2>Product List</h2>
-
-        {items.map((item) => (
-          <div
-            key={item.id}
-            style={{ border: "1px solid gray", padding: 10, margin: 10 }}
-          >
-            <h3>{item.title}</h3>
-            <img src={item.image} alt={item.title} width="120" />
-            <p>{item.description}</p>
-          </div>
-        ))}
-
-        <div className="row">
-          <div></div>
-        </div>
-        <div>
-          <img src="/images/img4.jpg" alt="digital image" />
-        </div>
-      </div> */}
     </>
   );
 }

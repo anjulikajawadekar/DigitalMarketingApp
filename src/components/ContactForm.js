@@ -70,7 +70,7 @@ export default function ContactForm() {
               rows={4}
               sx={{ mb: 2 }}
             />
-            <Button type="submit" variant="contained">
+            <Button style={{background:"#1c5e87"}} type="submit" variant="contained">
               Send
             </Button>
           </form>

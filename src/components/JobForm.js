@@ -94,7 +94,7 @@ export default function JobForm() {
               onChange={handleCv}
               className="form-control"
             />
-            <Button type="submit" variant="contained" sx={{ mt: 2 }}>
+            <Button style={{background:"#1c5e87"}} type="submit" variant="contained" sx={{ mt: 2 }}>
               Submit Application
             </Button>
           </form>

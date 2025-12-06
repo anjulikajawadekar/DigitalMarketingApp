@@ -16,12 +16,7 @@ export default function Dashboard() {
     <div className='container-fluid p-4' >
       <h2>Admin Dashboard</h2>
       <Grid container spacing={2}>
-        {/* <Grid item xs={12} md={4}>
-          <Paper sx={{p:2}}>
-            <Typography variant="h6">Gallery</Typography>
-            <Typography variant="h4">{gallery.length}</Typography>
-          </Paper>
-        </Grid> */}
+      
         <Grid item xs={12} md={4}>
           <Paper sx={{p:2}}>
             <Typography variant="h6">Job Applications</Typography>
@@ -46,7 +41,8 @@ export default function Dashboard() {
           <div>
             <Typography variant="body1">{j.name} — {j.position}</Typography>
             <Typography variant="body2">{j.email}</Typography>
-            <a href={j.cvDataUrl} target="_blank" rel="noreferrer">Open CV ({j.cvName})</a>
+            {/* <a href={j.cvDataUrl} target="_blank" rel="noreferrer">Open CV ({j.cvName})</a> */}
+            <a href={j.cvDataUrl} download={j.cvName}>Download CV ({j.cvName})</a>
           </div>
         )}
       />
